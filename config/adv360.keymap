@@ -87,7 +87,7 @@
         td_double_caps: td_double_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             bindings = <&caps_word>, <&kp CAPSLOCK>;
         };
 
@@ -95,7 +95,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
             bindings = <&mo>, <&td_double_caps>;
         };
 
@@ -110,7 +110,7 @@
             pwd: pwd {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
-                bindings = <&kp A &kp SPACE &kp BACKSPACE &kp B &kp SPACE &kp BACKSPACE &kp AT &kp SPACE &kp BACKSPACE &kp N1 &kp SPACE &kp BACKSPACE &kp N2 &kp SPACE &kp BACKSPACE &kp N3 &kp SPACE &kp BACKSPACE &kp N4 &kp SPACE &kp BACKSPACE &kp N5 &kp RET>;
+                bindings = <&kp A &kp SPACE &kp BACKSPACE &kp B &kp SPACE &kp BACKSPACE &kp LS(N2) &kp SPACE &kp BACKSPACE &kp N1 &kp SPACE &kp BACKSPACE &kp N2 &kp SPACE &kp BACKSPACE &kp N3 &kp SPACE &kp BACKSPACE &kp N4 &kp SPACE &kp BACKSPACE &kp N5 &kp RET>;
                 label = "PWD";
             };
         };
