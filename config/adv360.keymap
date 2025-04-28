@@ -84,27 +84,6 @@
             bindings = <&mo>, <&caps_word>;
         };
 
-        my_td: my_tap_dance {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
-        };
-
-        td_double_caps: td_double_caps {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&caps_word>, <&kp CAPSLOCK>;
-        };
-
-        td_mt: tap_dance_mod_tap {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&lt 2 ESCAPE>, <&kp CAPSLOCK>;
-        };
-
         macros {
             vim_save: vim_save {
                 compatible = "zmk,behavior-macro";
@@ -123,11 +102,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE          &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                       &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
-&kp UNDER          &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                       &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
-&caps_word         &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &none           &thumb 7 ESCAPE     &none           &kp DEL     &kp ENTER   &none         &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
-&kp NON_US_BSLH    &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none           &none                                 &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
-&lt_caps_word 2 0  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &my_td      &td_mt  &kp ESCAPE  &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &mo 2
+&kp GRAVE          &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                         &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
+&kp UNDER          &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                         &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
+&lt 6 ESCAPE       &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &none           &thumb 7 BACKSPACE  &none                &kp DEL  &kp ENTER   &none         &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
+&kp NON_US_BSLH    &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none                &none                              &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
+&lt_caps_word 2 0  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &kp PRINTSCREEN      &none    &kp ESCAPE  &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &lt_caps_word 2 0
             >;
         };
 
@@ -145,11 +124,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &kp KP_MULTIPLY      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1    &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans    &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans    &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&trans    &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+&kp CAPS  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &kp CAPS
             >;
         };
 
@@ -186,11 +165,11 @@
 
         NUMBERS {
             bindings = <
-&kp ESCAPE  &kp ENTER  &kp SPACE  &kp TAB  &kp SEMI       &kp COMMA   &trans                                               &trans           &none            &kp LS(N3)       &kp COMMA        &trans           &trans           &trans
-&trans      &trans     &trans     &trans   &kp BACKSPACE  &kp DELETE  &trans                                               &trans           &kp PERCENT      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMI)     &none
-&kp K       &trans     &trans     &trans   &kp L          &trans      &trans  &trans  &trans      &none      &kp KP_DOT    &trans           &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp L
-&trans      &trans     &trans     &trans   &kp K          &trans                      &trans      &kp RS(G)                                 &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &none
-&trans      &trans     &trans     &trans   &trans                     &trans  &trans  &trans      &none      &kp KP_EQUAL  &kp KP_NUMBER_0                   &trans           &trans           &trans           &trans           &trans
+&kp ESCAPE  &kp ENTER  &kp SPACE  &kp TAB  &kp SEMI            &kp COMMA   &trans                                           &trans           &none            &kp LS(N3)       &kp COMMA        &trans           &trans           &trans
+&trans      &trans     &trans     &trans   &kp BACKSPACE       &kp DELETE  &trans                                           &trans           &kp PERCENT      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMI)     &none
+&trans      &trans     &trans     &trans   &hm LEFT_CONTROL L  &trans      &trans  &trans  &trans      &none  &kp KP_DOT    &trans           &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp LS(G)
+&trans      &trans     &trans     &trans   &kp K               &trans                      &trans      &none                                 &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &none
+&trans      &trans     &trans     &trans   &trans                          &trans  &trans  &trans      &none  &kp KP_EQUAL  &kp KP_NUMBER_0                   &trans           &trans           &trans           &trans           &trans
             >;
         };
 
