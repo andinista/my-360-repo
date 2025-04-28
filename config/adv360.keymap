@@ -86,8 +86,8 @@
         td_mt: tap_dance_mod_tap {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mt LSHIFT N1>, <&kp N2>;
+            tapping-term-ms = <150>;
+            bindings = <&lt 2 ESCAPE>, <&kp CAPSLOCK>;
         };
 
         macros {
@@ -134,7 +134,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &kp KP_MULTIPLY      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
         };
 
