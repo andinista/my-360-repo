@@ -83,6 +83,13 @@
             bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
 
+        td_mt: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LSHIFT N1>, <&kp N2>;
+        };
+
         macros {
             vim_save: vim_save {
                 compatible = "zmk,behavior-macro";
@@ -105,7 +112,7 @@
 &kp UNDER          &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                       &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
 &caps_word         &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &none           &thumb 7 ESCAPE     &none           &kp DEL     &kp ENTER   &none         &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
 &kp NON_US_BSLH    &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none           &none                                 &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
-&lt 2 PRINTSCREEN  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &my_td      &kp ESCAPE  &kp ESCAPE  &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &mo 2
+&lt 2 PRINTSCREEN  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &my_td      &td_mt  &kp ESCAPE  &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &mo 2
             >;
         };
 
