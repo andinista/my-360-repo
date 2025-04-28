@@ -145,11 +145,11 @@
 
         CURSOR {
             bindings = <
-&vim_save                     &trans  &trans                        &trans                        &trans  &trans      &trans                                      &trans      &trans  &trans    &trans           &trans             &trans     &vim_save
-&trans                        &trans  &kp LC(W)                     &kp LS(LA(LC(LG(NUMBER_1))))  &trans  &trans      &trans                                      &trans      &trans  &trans    &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans     &trans
-&kp LS(LA(LC(LG(NUMBER_1))))  &trans  &kp LS(LA(LC(LG(NUMBER_1))))  &trans                        &trans  &trans      &trans  &trans  &trans      &trans  &trans  &trans      &trans  &kp LEFT  &kp DOWN         &kp UP_ARROW       &kp RIGHT  &trans
-&trans                        &trans  &trans                        &trans                        &trans  &caps_word                  &trans      &trans                      &trans  &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP        &kp END    &trans
-&none                         &trans  &trans                        &trans                        &trans              &trans  &trans  &trans      &trans  &trans  &kp ESCAPE          &trans    &trans           &trans             &trans     &kp PRINTSCREEN
+&vim_save  &kp LC(N1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)  &trans                                      &trans  &kp LC(NUMBER_6)  &kp LC(N7)  &kp LC(N8)       &kp LC(N9)         &trans     &vim_save
+&trans     &trans      &kp LC(W)         &trans            &kp LC(R)         &trans      &trans                                      &trans  &trans            &trans      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans     &trans
+&trans     &trans      &trans            &trans            &trans            &trans      &trans  &trans  &trans      &trans  &trans  &trans  &trans            &kp LEFT    &kp DOWN         &kp UP_ARROW       &kp RIGHT  &trans
+&trans     &trans      &trans            &trans            &trans            &trans                      &trans      &trans                  &trans            &kp HOME    &kp PAGE_DOWN    &kp PAGE_UP        &kp END    &trans
+&trans     &trans      &trans            &trans            &trans                        &trans  &trans  &trans      &trans  &trans  &trans                    &trans      &trans           &trans             &trans     &trans
             >;
         };
 
