@@ -84,21 +84,6 @@
             bindings = <&mo>, <&caps_word>;
         };
 
-        td_double_caps: td_double_caps {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <130>;
-            bindings = <&caps_word>, <&kp CAPSLOCK>;
-        };
-
-        lt_double_caps: lt_double_caps {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <130>;
-            bindings = <&mo>, <&td_double_caps>;
-        };
-
         macros {
             vim_save: vim_save {
                 compatible = "zmk,behavior-macro";
@@ -110,7 +95,7 @@
             pwd: pwd {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
-                bindings = <&kp A &kp SPACE &kp BACKSPACE &kp B &kp SPACE &kp BACKSPACE &kp LS(N2) &kp SPACE &kp BACKSPACE &kp N1 &kp SPACE &kp BACKSPACE &kp N2 &kp SPACE &kp BACKSPACE &kp N3 &kp SPACE &kp BACKSPACE &kp N4 &kp SPACE &kp BACKSPACE &kp N5 &kp RET>;
+                bindings = <&kp A &kp SPACE &kp BACKSPACE &kp B &kp SPACE &kp BACKSPACE &kp DOUBLE_QUOTES &kp SPACE &kp BACKSPACE &kp N1 &kp SPACE &kp BACKSPACE &kp N2 &kp SPACE &kp BACKSPACE &kp N3 &kp SPACE &kp BACKSPACE &kp N4 &kp SPACE &kp BACKSPACE &kp N5 &kp RET>;
                 label = "PWD";
             };
         };
@@ -124,11 +109,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE            &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                                 &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
-&kp UNDER            &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                                 &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
-&lt 6 ESCAPE         &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &none           &thumb 7 BACKSPACE  &none                &kp DEL          &kp ENTER   &none         &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
-&kp NON_US_BSLH      &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none                &none                                      &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
-&lt_double_caps 2 0  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &kp PRINTSCREEN      &kp PRINTSCREEN  &kp ESCAPE  &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &lt_double_caps 2 0
+&kp GRAVE          &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                                 &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
+&kp UNDER          &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                                 &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
+&lt 6 ESCAPE       &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &none           &thumb 7 BACKSPACE  &none                &kp DEL          &kp ENTER   &none         &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
+&kp NON_US_BSLH    &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none                &none                                      &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
+&lt_caps_word 2 0  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &kp PRINTSCREEN      &kp PRINTSCREEN  &kp ESCAPE  &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &lt_caps_word 2 0
             >;
         };
 
