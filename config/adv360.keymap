@@ -109,11 +109,11 @@
 
         default_layer {
             bindings = <
-&kp GRAVE          &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                                 &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
-&kp UNDER          &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                                 &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
-&lt 6 ESCAPE       &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &caps_word      &thumb 7 BACKSPACE  &none                &kp DEL          &kp ENTER   &caps_word    &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
-&kp NON_US_BSLH    &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none                &none                                      &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
-&lt_caps_word 2 0  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &kp PRINTSCREEN      &kp PRINTSCREEN  &kp ESCAPE  &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &lt_caps_word 2 0
+&kp GRAVE          &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                      &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
+&kp UNDER          &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                      &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
+&lt_caps_word 6 0  &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &caps_word      &mo 7               &none           &none       &kp ENTER  &caps_word    &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
+&kp NON_US_BSLH    &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none           &none                                &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
+&lt_caps_word 2 0  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &kp ESCAPE      &kp ESCAPE  &kp DEL    &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &lt_caps_word 2 0
             >;
         };
 
@@ -152,11 +152,11 @@
 
         CURSOR {
             bindings = <
-&pwd          &kp LC(N1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)  &trans                                      &trans  &kp LC(NUMBER_6)  &kp LC(N7)  &kp LC(N8)       &kp LC(N9)         &trans     &vim_save
-&trans        &trans      &kp LC(W)         &trans            &kp LC(R)         &trans      &trans                                      &trans  &trans            &trans      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &pwd       &trans
-&trans        &trans      &vim_save         &trans            &trans            &trans      &trans  &trans  &trans      &trans  &trans  &trans  &trans            &kp LEFT    &kp DOWN         &kp UP_ARROW       &kp RIGHT  &caps_word
-&trans        &trans      &trans            &trans            &trans            &trans                      &trans      &trans                  &trans            &kp HOME    &kp PAGE_DOWN    &kp PAGE_UP        &kp END    &trans
-&kp CAPSLOCK  &trans      &trans            &trans            &trans                        &trans  &trans  &trans      &trans  &trans  &trans                    &trans      &trans           &trans             &trans     &trans
+&pwd             &kp LC(N1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)  &trans                                      &trans  &kp LC(NUMBER_6)  &kp LC(N7)  &kp LC(N8)       &kp LC(N9)         &trans     &vim_save
+&trans           &trans      &kp LC(W)         &trans            &kp LC(R)         &trans      &trans                                      &trans  &trans            &trans      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &pwd       &trans
+&trans           &trans      &vim_save         &trans            &trans            &trans      &trans  &trans  &trans      &trans  &trans  &trans  &trans            &kp LEFT    &kp DOWN         &kp UP_ARROW       &kp RIGHT  &caps_word
+&trans           &trans      &trans            &trans            &trans            &trans                      &trans      &trans                  &trans            &kp HOME    &kp PAGE_DOWN    &kp PAGE_UP        &kp END    &trans
+&kp PRINTSCREEN  &trans      &trans            &trans            &trans                        &trans  &trans  &trans      &trans  &trans  &trans                    &trans      &trans           &trans             &trans     &trans
             >;
         };
 
