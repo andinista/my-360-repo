@@ -109,9 +109,9 @@
 
         default_layer {
             bindings = <
-&kp GRAVE          &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                      &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
+&caps_word         &kp N1          &kp N2           &kp N3          &kp N4       &kp N5  &none                                                                      &mo 3         &kp N6  &kp N7        &kp N8            &kp N9             &kp N0             &kp EQUAL
 &kp UNDER          &kp Q           &hm RIGHT_ALT W  &kp E           &kp R        &kp T   &none                                                                      &none         &kp Y   &kp U         &kp I             &hm RIGHT_ALT O    &kp P              &kp MINUS
-&lt_caps_word 6 0  &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &caps_word      &mo 7               &none           &none       &kp ENTER  &caps_word    &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
+&lt 6 GRAVE        &hm LEFT_ALT A  &hm LMETA S      &hmsft LSHFT D  &hm LCTRL F  &kp G   &caps_word      &mo 7               &none           &none       &kp ENTER  &caps_word    &kp H   &hm RCTRL J   &hmsft RSHFT K    &hm RMETA L        &hm LEFT_ALT SEMI  &kp SQT
 &kp NON_US_BSLH    &kp Z           &space 6 X       &space 6 C      &kp V        &kp B                                       &none           &none                                &kp N   &kp M         &kp COMMA         &kp PERIOD         &kp FSLH           &kp NON_US_HASH
 &lt_caps_word 2 0  &kp LEFT        &kp DOWN         &kp UP_ARROW    &kp RIGHT            &space 4 SPACE  &thumb 6 BACKSPACE  &kp ESCAPE      &kp ESCAPE  &kp DEL    &thumb 5 TAB          &parang_left  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &parang_right      &lt_caps_word 2 0
             >;
@@ -162,7 +162,7 @@
 
         SYMBOL {
             bindings = <
-&trans               &trans                &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SEMI               &kp COMMA     &trans                                      &trans  &trans  &trans  &trans                        &trans                        &trans  &trans
+&kp CAPS             &trans                &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SEMI               &kp COMMA     &trans                                      &trans  &trans  &trans  &trans                        &trans                        &trans  &trans
 &kp EXCL             &kp LEFT_PARENTHESIS  &kp SINGLE_QUOTE  &kp AT             &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans                                      &trans  &trans  &trans  &kp LS(LA(LC(LG(NUMBER_2))))  &trans                        &trans  &trans
 &kp NON_US_HASH      &kp CARET             &kp EQUAL         &kp UNDER          &kp DOLLAR             &kp ASTERISK  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans                        &kp LS(LA(LC(LG(NUMBER_2))))  &trans  &kp LS(LA(LC(LG(NUMBER_2))))
 &kp LS(NON_US_BSLH)  &kp LESS_THAN         &kp AMPERSAND     &kp MINUS          &kp GREATER_THAN       &kp PLUS                      &trans      &trans                  &trans  &trans  &trans                        &trans                        &trans  &trans
