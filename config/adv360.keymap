@@ -14,20 +14,22 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            quick_tap_ms = <160>;
-            flavor = "balanced";
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <165>;
         };
 
         hmsft: homerow_mods_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_SHIFT";
             #binding-cells = <2>;
-            tapping-term-ms = <140>; //Orig 200
-            quick_tap_ms = <120>; // Orig: 175
-            flavor = "balanced";
+            tapping-term-ms = <150>; //Orig 200 // Orig: 175
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <125>;
         };
 
         //
@@ -37,8 +39,8 @@
         thumb: thumb_layer_access {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <160>; // enable repeat
+            tapping-term-ms = <190>;
+            quick-tap-ms = <165>; // enable repeat
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
         };
@@ -46,8 +48,8 @@
         space: thumb_layer_access_spacebar {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <160>; // enable repeat
+            tapping-term-ms = <190>;
+            quick-tap-ms = <165>; // enable repeat
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
         };
