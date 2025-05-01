@@ -47,9 +47,9 @@
 
         space: thumb_layer_access_spacebar {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
-            tapping-term-ms = <190>;
-            quick-tap-ms = <165>; // enable repeat
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <155>; // enable repeat
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
         };
