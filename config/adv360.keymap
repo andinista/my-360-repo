@@ -176,9 +176,9 @@
             bindings = <
 &trans  &trans     &trans  &kp A   &kp B               &kp C   &trans                                                   &trans           &kp DOLLAR       &kp LS(N3)                         &kp COMMA        &kp AMPERSAND    &trans           &trans
 &trans  &trans     &kp AT  &kp X   &kp Y               &kp Z   &trans                                                   &trans           &kp PERCENT      &kp KP_NUMBER_7                    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMI)     &none
-&trans  &trans     &trans  &kp X   &hm LEFT_CONTROL Y  &kp Z   &trans          &trans  &trans      &none  &kp KP_DOT    &trans           &kp KP_PLUS      &hm RC(RIGHT_CONTROL) KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp DOUBLE_QUOTES
+&trans  &trans     &trans  &kp X   &hm LEFT_CONTROL Y  &kp Z   &trans          &trans  &trans      &none  &kp KP_EQUAL  &trans           &kp KP_PLUS      &hm RC(RIGHT_CONTROL) KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp DOUBLE_QUOTES
 &trans  &kp LS(G)  &trans  &kp K   &kp L               &trans                          &trans      &none                                 &kp KP_ASTERISK  &kp KP_NUMBER_1                    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &none
-&trans  &trans     &trans  &trans  &trans                      &space 4 SPACE  &trans  &trans      &none  &kp KP_EQUAL  &kp KP_NUMBER_0                   &trans                             &trans           &trans           &trans           &kp CAPS
+&trans  &trans     &trans  &trans  &trans                      &space 4 SPACE  &trans  &trans      &none  &kp KP_DOT    &kp KP_NUMBER_0                   &trans                             &trans           &trans           &trans           &kp CAPS
             >;
         };
 
